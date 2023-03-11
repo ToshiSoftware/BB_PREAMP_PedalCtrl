@@ -68,14 +68,11 @@ void handleSetVol(void) {
               if(index>=0 && index<=9)
               {
                 int value = httpServer.arg(i).toInt();
-                if( value>=0 && value<=99){
-                  if(name[0]=='v') presetParams[index].volume = value;
-                  else if(name[0]=='g') presetParams[index].gain = value;
-                  else if(name[0]=='t') presetParams[index].treble = value;
-                  else if(name[0]=='b') presetParams[index].bass = value;
-                  changeCount++;
-                }
-
+                if(name[0]=='v' && value>=0 && value<=99) presetParams[index].volume = value;
+                else if(name[0]=='g' && value>=0 && value<=99) presetParams[index].gain = value;
+                else if(name[0]=='t' && value>=-50 && value<=50) presetParams[index].treble = value;
+                else if(name[0]=='b' && value>=-50 && value<=50) presetParams[index].bass = value;
+                changeCount++;
               }
             }
           }

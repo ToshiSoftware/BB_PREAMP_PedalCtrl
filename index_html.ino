@@ -3,7 +3,7 @@
 char index_html1[]=
 "<html>\n\
 <head>\n\
-<title>TEST FORM</title>\n\
+<title>Presettable Blues Breaker Editor</title>\n\
 <style type=\"text/css\">\n\
 <!--\n\
 \n\
@@ -14,15 +14,15 @@ html {\n\
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,p,blockquote,th,td {\n\
 	margin:0;\n\
 	padding:0;\n\
-	font-family: 'Meiryo',  'sans-serif';\n\
+	font-family: Arial, Helvetica, sans-serif;\n\
 	color: #222222;\n\
 	line-height: 1.5em;\n\
-	font-size:14px;\n\
+	font-size:18px;\n\
 }\n\
 table {\n\
 	border-collapse:collapse;\n\
 	border-spacing:0;\n\
-	font-size:14px;\n\
+	font-size:18px;\n\
 	margin-left:8px;\n\
 	margin-right:8px;\n\
 	margin-top:2px;\n\
@@ -35,7 +35,21 @@ h1 {\n\
 	font-weight: bold;\n\
 	border-bottom: #0068B7 6px solid;\n\
 	clear: both;\n\
-	font-size: 16px;\n\
+	font-size: 20px;\n\
+}\n\
+.btn--orange,\n\
+a.btn--orange {\n\
+  color: #fff;\n\
+  background-color: #eb6100;\n\
+}\n\
+.btn--orange:hover,\n\
+a.btn--orange:hover {\n\
+  color: #fff;\n\
+  background: #f56500;\n\
+}\n\
+\n\
+a.btn--radius {\n\
+   border-radius: 100vh;\n\
 }\n\
 \n\
 -->\n\
@@ -47,7 +61,7 @@ h1 {\n\
 <body>\n\
 \n\
 <div>\n\
-<h1>BB-Preamp Preset editor V1.00<br>\n\
+<h1>Presettable Blues Breaker Editor V1.1<br>\n\
 </h1>\n\
 </div>\n\
   \n\
@@ -295,7 +309,7 @@ h1 {\n\
   </table>\n\
 <br>\n\
 \n\
- <p align=\"center\"><input type=\"submit\" name=\"sn\" value=\"Submit preset data\"/></p>\n\
+ <p align=\"center\"><input class=\"btn btn--orange btn--radius\" type=\"submit\" name=\"sn\" value=\"Submit preset data\"/></p>\n\
 <script language=\"javascript\">\n";
 
 

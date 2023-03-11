@@ -126,7 +126,7 @@ void setup(void) {
   lcd.setContrast(45);
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("BruesBreaker 1.0");
+  lcd.print("BruesBreaker 1.1");
 
   lcd.setCursor(0, 1);
   for(int i=0; i<strlen(STARTING_STR); i++){
